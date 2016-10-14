@@ -10,6 +10,15 @@ def home():
 def genre(query):
   return 'This is the %s page' % query
 
+# comment out below - only for testing
+@app.route('/force404')
+def force404():
+  abort(404)
+
+@app.errorhandler(404)
+def page_not_found(error):
+  return "Could not find the page you requested.", 404
+
 
 
 if __name__ == "__main__":
