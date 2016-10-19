@@ -1,14 +1,14 @@
-
-from flask import Flask, redirect, url_for, abort, request
+from flask import Flask, redirect, url_for, abort, request, render_template, json
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-  return 'Home page'
+  return render_template('index.html'), 200
 
-@app.route('/genre/<query>')
-def genre(query):
-  return 'This is the %s page' % query
+@app.route('/', methods=['POST'])
+def genre():
+  my_genre = request.form['my_genre']
+  return render_template('results.html', my_genre=my_genre)
 
 # comment out below - only for testing
 @app.route('/force404')
