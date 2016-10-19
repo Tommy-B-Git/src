@@ -1,24 +1,23 @@
 <!doctype html>
 <html>
   <head>
-    <title>Music Catalog | Home</title>
+    <title>Music Catalog | Upload</title>
       <link href ="{{ url_for('static', filename ='css/bootstrap.min.css') }}" rel="stylesheet"/>
       <link href ="{{ url_for('static', filename ='css/custom.css') }}" rel="stylesheet"/>
   </head>
 
   <body>
     <div class="container">
-      <h1 class="text-center">Music Catalog Page</h1>
+      <h1 class="text-center">Upload an Image</h1>
     </div>
     <!-- start of form container-->
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
-          <form method="post" action="{{ url_for('genre') }}">
+          <form method="post" action="" name="form" enctype="multipart/form-data">
             <div class="form-group">
-              <label for="genre">Choose from Rock, Indie or Popular</label>
-              <input type="text" class="form-control" name="my_genre"
-              placeholder="Type your genre here">
+              <label for="genre">Upoad File</label>
+              <input type="file" class="form-control" name="datafile">
             </div> <!-- end form group -->
             <div class="col-md-6 col-md-offset-4"> <!-- button container-->
               <button type="submit" class="btn-block btn btn-submit">Submit</button>
@@ -26,7 +25,7 @@
           </form>
         </div> <!-- end cols -->
       </div> <!-- end row -->
-      <p><a href="{{ url_for('upload_img') }}">Upload Image</a></p>
+      <p><a href="{{ url_for('home') }}">Go home</a></p>
     </div> <!-- end form cont -->
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
