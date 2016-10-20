@@ -7,27 +7,16 @@
   </head>
 
   <body>
-    <div class="container">
-      <h1 class="text-center">Music Catalog Page</h1>
-    </div>
+    {% include 'navigation.html' %}
     <!-- start of form container-->
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
-          <form method="post" action="{{ url_for('genre') }}">
-            <div class="form-group">
-              <label for="genre">Choose from Rock, Indie or Popular</label>
-              <input type="text" class="form-control" name="my_genre"
-              placeholder="Type your genre here">
-            </div> <!-- end form group -->
-            <div class="col-md-6 col-md-offset-4"> <!-- button container-->
-              <button type="submit" class="btn-block btn btn-submit">Submit</button>
-            </div> <!-- end button cont --> 
-          </form>
-        </div> <!-- end cols -->
+          <h1 class="appHeadersMain text-center">Welcome to iChoons</h1>
+          <p class="text-center"><a href="{{ url_for('browse') }}">Browse catalog</a></p>
+        </div>
       </div> <!-- end row -->
-      <p><a href="{{ url_for('upload_img') }}">Upload Image</a></p>
-    </div> <!-- end form cont -->
+    </div> <!-- end container -->
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
