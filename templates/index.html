@@ -2,8 +2,7 @@
 <html>
   <head>
     <title>Music Catalog | Home</title>
-      <link href ="{{ url_for('static', filename ='css/bootstrap.min.css') }}"
-      rel="stylesheet"/>
+      <link href ="{{ url_for('static', filename ='css/bootstrap.min.css') }}" rel="stylesheet"/>
       <link href ="{{ url_for('static', filename ='css/custom.css') }}" rel="stylesheet"/>
   </head>
 
@@ -13,7 +12,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
-          <h1 class="appHeadersMain text-center">Welcome to iChoons</h1>
+          <h1 class="appHeaders text-center">Welcome to iChoons</h1>
           <p class="text-center"><a href="{{ url_for('browse') }}">Browse catalog</a></p>
         </div>
       </div> <!-- end row -->
