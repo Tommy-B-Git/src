@@ -32,7 +32,7 @@
             </div> <!-- end button cont -->
           </form>
           {% if error %}
-          <div class="alert alert-danger" role="alert"><p>{{ error }}</p></div>
+          <div class="alert alert-danger" role="alert"><p><a href="{{ url_for('admin') }}">{{ error }}</a></p></div>
           {% endif %}
         </div> <!-- end cols -->
       </div> <!-- end row -->

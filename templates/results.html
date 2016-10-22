@@ -15,6 +15,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
+          {% for data in result %}
+          <p class="text-center">{{ data.band }}</p>
+          {% endfor %}
           <p class="text-center"><a href="{{ url_for('home') }}">Search Again?</a></p> 
         </div> <!-- end cols -->
       </div> <!-- end row -->

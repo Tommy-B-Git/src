@@ -26,5 +26,9 @@
               <button type="submit" class="btn btn-primary">Submit</button>
             </div> <!-- end button cont -->
           </form>
+          {% if error %}
+          <div class="alert alert-danger" role="alert"><p><a href="{{
+          url_for('browse') }}">{{ error }}</a></p></div>
+          {% endif %}
         </div> <!-- end cols -->
       </div> <!-- end row -->
