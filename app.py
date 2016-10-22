@@ -30,13 +30,14 @@ def admin():
     if auth_logon(request.form['username'], request.form['password']):
       return redirect(url_for('welcome', username=request.form.get('username')))
     else:
-      error = 'Wrong username or password'
+      error = 'Wrong username or password - Try again'
   return render_template('admin.html', error=error)
 
-@app.route('welcome/<username>')
+@app.route('/welcome/<username>')
 def welcome(username):
   return render_template('welcome.html', username=username)
 
+#Image upload view function
 @app.route("/upload/", methods=['POST', 'GET'])
 def upload():
   if request.method =='POST':
@@ -46,6 +47,10 @@ def upload():
     return render_template('success.html'), 200
   else:
     return render_template('upload.html'), 200
+
+@app.route('/logout')
+def logout():
+  return render_template('logout.html')
 
 # comment out below - only for testing
 @app.route('/force404')
