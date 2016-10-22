@@ -28,16 +28,17 @@
               placeholder="Type password">
             </div> <!-- end form group -->
             <div class="form-group"> <!-- button container-->
-              <button type="submit" class="btn btn-submit">Submit</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
             </div> <!-- end button cont -->
           </form>
+          {% if error %}
+          <div class="alert alert-danger" role="alert"><p>{{ error }}</p></div>
+          {% endif %}
         </div> <!-- end cols -->
       </div> <!-- end row -->
-    </div> <!-- end form cont -->
+    </div> <!-- end container -->
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
   <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
 </html>
-<!doctype html>
-<html>

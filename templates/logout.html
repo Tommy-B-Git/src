@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>iChoons | Admin Home</title>
+    <title>iChoons | Logged out</title>
       <link href ="{{ url_for('static', filename ='css/bootstrap.min.css') }}" rel="stylesheet"/>
       <link href ="{{ url_for('static', filename ='css/custom.css') }}" rel="stylesheet"/>
   </head>
@@ -12,10 +12,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
-          <h1 class="text-center appHeaders">Welcome to Admin central, {{ username }}</h1>
-          <p class="text-center"><a href="{{ url_for('upload') }}" class="btn btn-default">Click to Upload an image</a></p>
-          <p class="text-center"><a href="{{ url_for('logout') }}"
-       class="btn btn-warning">Log out?</a></p>
+          <h1 class="text-center appHeaders">You have logged out!</h1>
+          <p class="text-center"><a href="{{ url_for('admin') }}" class="btn btn-default">Log In?</a></p>
         </div> <!-- end cols -->
       </div> <!-- end row -->
     </div> <!-- end form cont -->
