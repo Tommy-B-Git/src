@@ -14,12 +14,31 @@ def genre():
   my_genre = request.form['my_genre']
   return render_template('results.html', my_genre=my_genre)
 
-@app.route('/admin')
+# Validate admin logon
+def auth_logon(username, password):
+  if username == password:
+    return True
+  else:
+    return False
+
+# If form is POST-ed and validated, grab u/n and p/w via request.form 
+@app.route('/admin', methods=['GET', 'POST'])
 def admin():
-  return render_template('admin.html')
+  #Set up error handler below
+  error = None
+  if request.method == 'POST':
+    if auth_logon(request.form['username'], request.form['password']):
+      return redirect(url_for('welcome', username=request.form.get('username')))
+    else:
+      error = 'Wrong username or password'
+  return render_template('admin.html', error=error)
+
+@app.route('welcome/<username>')
+def welcome(username):
+  return render_template('welcome.html', username=username)
 
 @app.route("/upload/", methods=['POST', 'GET'])
-def upload_img():
+def upload():
   if request.method =='POST':
     f = request.files['datafile']
     my_filename = f.getvalue()
