@@ -11,8 +11,15 @@ def browse():
 
 @app.route('/browse', methods=['POST', 'GET'])
 def genre():
+  error = None
   my_genre = request.form['my_genre']
-  return render_template('results.html', my_genre=my_genre)
+  if my_genre == "":
+    error = 'You must enter a search term - try again'
+    return render_template('/browse.html', error=error)
+  else:
+    json_data = open('static/json/data.json').read()
+    result = json.loads(json_data)
+    return render_template('results.html', my_genre=my_genre, result=result)
 
 # Validate admin logon
 def auth_logon(username, password):
@@ -30,7 +37,7 @@ def admin():
     if auth_logon(request.form['username'], request.form['password']):
       return redirect(url_for('welcome', username=request.form.get('username')))
     else:
-      error = 'Wrong username or password - Try again'
+      error = 'Wrong username or password - CLICK HERE to try again'
   return render_template('admin.html', error=error)
 
 @app.route('/welcome/<username>')
