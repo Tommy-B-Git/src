@@ -1,4 +1,6 @@
 from flask import Flask, redirect, url_for, abort, request, render_template, json
+from werkzeug.utils import secure_filename
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -17,7 +19,7 @@ def genre():
     error = 'You must enter a search term - try again'
     return render_template('/browse.html', error=error)
   else:
-    json_data = open('static/json/data.json').read()
+    json_data = open('static/json/' + my_genre + '.json').read()
     result = json.loads(json_data)
     return render_template('results.html', my_genre=my_genre, result=result)
 
@@ -49,11 +51,15 @@ def welcome(username):
 def upload():
   if request.method =='POST':
     f = request.files['datafile']
-    my_filename = f.getvalue()
-    f.save('static/img/' + my_filename)
-    return render_template('success.html'), 200
+    new_file = f.filename
+    f.save('static/img/' + new_file)
+    return redirect(url_for('success'))
   else:
     return render_template('upload.html'), 200
+
+@app.route('/success')
+def success():
+  return render_template('success.html'), 200
 
 @app.route('/logout')
 def logout():

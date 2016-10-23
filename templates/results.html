@@ -15,9 +15,13 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
+          {% if my_genre %}
           {% for data in result %}
           <p class="text-center">{{ data.band }}</p>
+          <p class="text-center">{{ data.genre }}</p>
+          <p class="text-center">{{ data.name }}</p>
           {% endfor %}
+          {% endif %}
           <p class="text-center"><a href="{{ url_for('home') }}">Search Again?</a></p> 
         </div> <!-- end cols -->
       </div> <!-- end row -->
