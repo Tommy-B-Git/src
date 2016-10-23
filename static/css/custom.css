@@ -1,2 +1,4 @@
 body{background-color:#F0FFFF;}
 .appHeaders{margin-top:100px;}
+.flexBandCont{display:flex;}
+.flexBand{background-color:black; color:white;}
