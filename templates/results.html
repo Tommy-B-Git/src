@@ -14,14 +14,18 @@
     <!-- start of container-->
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          {% if my_genre %}
+        <div class="col-md-6 col-md-offset-3 flexBandCont">
+        
           {% for data in result %}
+          <div class="flexBand">
           <p class="text-center">{{ data.band }}</p>
           <p class="text-center">{{ data.genre }}</p>
-          <p class="text-center">{{ data.name }}</p>
+          <p class="text-center">{{ data.album }}</p>
+          <p class="text-center">{{ data.released }}</p>
+          <p class="text-center">{{ data.image }}</p>
+          </div>
           {% endfor %}
-          {% endif %}
+      
           <p class="text-center"><a href="{{ url_for('home') }}">Search Again?</a></p> 
         </div> <!-- end cols -->
       </div> <!-- end row -->
