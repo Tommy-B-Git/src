@@ -1,4 +1,13 @@
 body{background-color:#F0FFFF;}
 .appHeaders{margin-top:100px;}
 .flexBandCont{display:flex;}
-.flexBand{background-color:black; color:white;}
+.flexBand{background-color:blue; color:white; width:30%;}
+.inlineButz{display:inline; width:30%;}
+.buttonDivs{width:60%; margin 0 auto;}
+.albumThum{width:80%; margin:0 auto;}
+
+/* FONTS */
+
+.montserrat{font-family:'Montserrat', sans-serif;}
+.openSans{font-family:'Open Sans Condensed', sans-serif;}
+.ubuntu{font-family:'Ubuntu', sans-serif;}
