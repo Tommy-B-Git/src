@@ -9,13 +9,16 @@
   <body>
     {% include 'navigation.html' %}
     <!-- start of main container-->
-    <div class="container">
+    <div class="container mainConts">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-8 col-md-offset-2">
           <h1 class="text-center appHeaders">Welcome to Admin central, {{ username }}</h1>
-          <p class="text-center"><a href="{{ url_for('upload') }}" class="btn btn-default">Click to Upload an image</a></p>
-          <p class="text-center"><a href="{{ url_for('logout') }}"
-       class="btn btn-warning">Log out?</a></p>
+          <div class="buttonDivs center-block">
+          <a href="{{
+          url_for('upload') }}" class="btn btn-default inlineButz">Click to Upload an image</a>
+          <a href="{{ url_for('logout') }}"
+       class="btn btn-danger inlineButz">Log out?</a>
+          </div>
         </div> <!-- end cols -->
       </div> <!-- end row -->
     </div> <!-- end form cont -->

@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
   <head>
-    <title>Music Catalog | {{ my_genre }}</title>
+    <title>iChoons | {{ my_genre }}</title>
       <link href ="{{ url_for('static', filename ='css/bootstrap.min.css') }}" rel="stylesheet"/>
       <link href ="{{ url_for('static', filename ='css/custom.css') }}" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300|Ubuntu" rel="stylesheet">
   </head>
 
   <body>
@@ -14,21 +15,21 @@
     <!-- start of container-->
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3 flexBandCont">
+        <div class="col-md-10 col-md-offset-1 flexBandCont">
         
           {% for data in result %}
           <div class="flexBand">
-          <p class="text-center">{{ data.band }}</p>
+          <p class="text-center montserrat">{{ data.band }}</p>
           <p class="text-center">{{ data.genre }}</p>
           <p class="text-center">{{ data.album }}</p>
           <p class="text-center">{{ data.released }}</p>
-          <p class="text-center">{{ data.image }}</p>
+          <img src="{{ data.image }}" class="albumThum">
           </div>
           {% endfor %}
       
-          <p class="text-center"><a href="{{ url_for('home') }}">Search Again?</a></p> 
         </div> <!-- end cols -->
       </div> <!-- end row -->
+          <p class="text-center"><a href="{{ url_for('home') }}">Search Again?</a></p> 
     </div> <!-- end main container -->
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
