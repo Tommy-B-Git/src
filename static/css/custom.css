@@ -77,3 +77,8 @@ body {
     text-transform: uppercase;
     text-size: 3rem;
 }
+.avatar{
+    width:30%;
+    border-radius: 50% 50%;
+}
+
