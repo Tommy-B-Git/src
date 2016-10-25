@@ -3,17 +3,17 @@
   "genre": "indie",
   "album": "The Boy With The Arab Strap",
   "released": "1998",
-  "image": "bellesebastian.jpg"
+  "image": "static/img/bellesebastian.jpg"
 }, {
   "band": "Sonic Youth",
   "genre": "indie",
   "album": "Daydream Nation",
   "released": "1988",
-  "image": "sonicyouth.jpg"
+  "image": "static/img/sonicyouth.jpg"
 }, {
   "band": "The Smiths",
   "genre": "indie",
   "album": "The Queen Is Dead",
   "released": "1986",
-  "image": "thesmiths.jpg"
+  "image": "static/img/thesmiths.jpg"
 }]

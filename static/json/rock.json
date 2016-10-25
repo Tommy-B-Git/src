@@ -3,17 +3,17 @@
   "genre": "rock",
   "album": "InnerSpeaker",
   "released": "2010",
-  "image": "./static/img/tameimpala.jpg"
+  "image": "/static/img/tameimpala.jpg"
 }, {
   "band": "White Denim",
   "genre": "rock",
   "album": "Stiff",
   "released": "2016",
-  "image": "./static/img/whitedenim.jpg"
+  "image": "/static/img/whitedenim.jpg"
 }, {
   "band": "Ty Segall",
   "genre": "rock",
   "album": "Manipulator",
   "released": "2014",
-  "image": "./static/img/tysegall.jpg"
+  "image": "/static/img/tysegall.jpg"
 }]
