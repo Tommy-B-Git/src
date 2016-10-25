@@ -14,7 +14,7 @@ def browse():
 @app.route('/browse', methods=['POST', 'GET'])
 def genre():
   error = None
-  my_genre = request.form['my_genre']
+  my_genre = request.form['my_genre'].lower()
   if my_genre == "":
     error = 'You must enter a search term - try again'
     return render_template('/browse.html', error=error)
