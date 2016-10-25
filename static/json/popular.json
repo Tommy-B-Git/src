@@ -1,0 +1,19 @@
+[{
+  "band": "Coldplay",
+  "genre": "popular",
+  "album": "Parachutes",
+  "released": "2000",
+  "image": "/static/img/coldplay.jpg"
+}, {
+  "band": "The Beatles",
+  "genre": "popular",
+  "album": "Abbey Road",
+  "released": "1969",
+  "image": "/static/img/thebeatles.jpg"
+}, {
+  "band": "Jurassic5",
+  "genre": "popular",
+  "album": "Jurassic5",
+  "released": "1998",
+  "image": "/static/img/jurassic5.jpg"
+}]
