@@ -12,12 +12,10 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <h1 class="text-center appHeaders">Welcome to Admin central, {{ username }}</h1>
-          <div class="buttonDivs center-block">
-          <a href="{{
-          url_for('upload') }}" class="btn btn-default inlineButz">Click to Upload an image</a>
-          <a href="{{ url_for('logout') }}"
-       class="btn btn-danger inlineButz">Log out?</a>
-          </div>
+           <div class="form-group buttonDivs"> <!-- button container-->
+              <a href="{{ url_for('upload') }}" class="btn btn-primary customButn inlineButz">Click to Upload an image</a>
+              <a class="btn btn-danger inlineButz" href="{{ url_for('logout') }}">Logout</a>
+            </div> <!-- end button cont -->
         </div> <!-- end cols -->
       </div> <!-- end row -->
     </div> <!-- end form cont -->
