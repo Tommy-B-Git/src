@@ -21,8 +21,12 @@ def genre():
   term2 = 'indie'
   term3 = 'popular'
   # I know there must be a better way of error handling below.
-  if my_genre == "" or my_genre != term1 or my_genre != term2 or my_genre !=term3:
-    error = 'You must enter a search term - try again'
+  if my_genre == "":
+    error = 'Empty search box - Click here to try again'
+    return render_template('/browse.html', error=error)
+  #validate against gibberish search term  
+  elif my_genre not in (term1, term2, term3):  
+    error = 'You must enter a search term - Click here to try again'
     return render_template('/browse.html', error=error)
   else:
     json_data = open('static/json/' + my_genre + '.json').read()
