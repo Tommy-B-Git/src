@@ -6,15 +6,18 @@
   </head>
 
   <body>
+    {% include 'navigation.html' %}
     <div class="container">
-      <h1 class="text-center">Your image uploaded!!!</h1>
+      <h1 class="text-center appHeaders">Your image uploaded!!!</h1>
     </div>
     <!-- start of form container-->
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <p><a class="btn btn-default" href="{{ url_for('upload') }}">Upload another file?</a></p>
-          <p><a href="{{ url_for('home') }}">Go home</a></p>
+        <div class="col-md-8 col-md-offset-2">
+          <div class="buttonDivs center-block">
+          <a href="{{ url_for('upload') }}" class="btn btn-default inlineButz">Upload another image?</a>
+          <a href="{{ url_for('home') }}" class="btn btn-danger inlineButz">Log out?</a>
+          </div>
         </div> <!-- end cols -->
       </div> <!-- end row -->
     </div> <!-- end form cont -->
