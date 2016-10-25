@@ -1,5 +1,16 @@
 body{background-color:#F0FFFF; font-family:'Montserrat', sans-serif;}
-.appHeaders{margin-top:100px;}
+
+
+.mainBGImage{ 
+  background: url(../img/turntable-tint.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.appHeaders{margin-top:32vh;}
 .flexBandCont{display:flex;}
 .flexBand{background-color:#fff; color:#3C7070; width:30%; border: 2px solid
 #3C7070; padding:10px; margin: 10px;}
