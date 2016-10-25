@@ -12,7 +12,9 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <h1 class="text-center appHeaders">Welcome to Admin central, {{ username }}</h1>
-           <div class="form-group buttonDivs"> <!-- button container-->
+           <img src="{{ url_for('static', filename='img/avatar.png')
+           }}"class="avatar center-block"> 
+           <div class="buttonDivs center-block"> <!-- button container-->
               <a href="{{ url_for('upload') }}" class="btn btn-primary customButn inlineButz">Click to Upload an image</a>
               <a class="btn btn-danger inlineButz" href="{{ url_for('logout') }}">Logout</a>
             </div> <!-- end button cont -->
