@@ -13,9 +13,15 @@ def browse():
 
 @app.route('/browse', methods=['POST', 'GET'])
 def genre():
+  #Always set an error object to None
   error = None
+  #grab the user input from form field and make lower case
   my_genre = request.form['my_genre'].lower()
-  if my_genre == "":
+  term1 = 'rock'
+  term2 = 'indie'
+  term3 = 'popular'
+  # I know there must be a better way of error handling below.
+  if my_genre == "" or my_genre != term1 or my_genre != term2 or my_genre !=term3:
     error = 'You must enter a search term - try again'
     return render_template('/browse.html', error=error)
   else:
@@ -23,7 +29,7 @@ def genre():
     result = json.loads(json_data)
     return render_template('results.html', my_genre=my_genre, result=result)
 
-# Validate admin logon
+# Validate admin logon func
 def auth_logon(username, password):
   if username == password:
     return True
@@ -74,6 +80,7 @@ def logout():
 def force404():
   abort(404)
 
+#custom 404 Route
 @app.errorhandler(404)
 def page_not_found(error):
   return render_template('404.html'), 404
