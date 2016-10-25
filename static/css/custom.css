@@ -12,7 +12,7 @@ body {
 }
 
 .mainBGImage {
-    background: url(../img/turntable-tint.jpg) no-repeat center center fixed;
+    background: url(../img/turntable2tint.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -41,14 +41,15 @@ body {
 }
 .inlineButz {
     display: inline;
-    width: 30%;
+    width: 100px;
 }
 .buttonDivs {
-    width: 60%;
+    width: 40%;
     margin 0 auto;
 }
 .customButn{
     background-color: #305A5A;
+    color: #fff;
 }
 .albumThum {
     width: 100%;
