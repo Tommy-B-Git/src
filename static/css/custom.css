@@ -6,6 +6,11 @@ body {
 .navbar-inverse {
     background-color: #0C1717;
 }
+
+.adminBG{
+    background-color: #fef3c5;
+}
+
 .mainBGImage {
     background: url(../img/turntable-tint.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -14,14 +19,14 @@ body {
     background-size: cover;
 }
 .browseBG {
-    background: url(../img/tySegalltintBG.jpg) no-repeat center center fixed;
+    background: url(../img/tySegalltint2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 .appHeaders {
-    margin-top: 32vh;
+    margin-top: 26vh;
 }
 .flexBandCont {
     display: flex;
@@ -41,6 +46,9 @@ body {
 .buttonDivs {
     width: 60%;
     margin 0 auto;
+}
+.customButn{
+    background-color: #305A5A;
 }
 .albumThum {
     width: 100%;
