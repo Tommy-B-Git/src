@@ -1,30 +1,70 @@
-body{background-color:#F0FFFF; font-family:'Montserrat', sans-serif;}
 
-
-.mainBGImage{ 
-  background: url(../img/turntable-tint.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body {
+    background-color: #F0FFFF;
+    font-family: 'Montserrat', sans-serif;
 }
-
-
-.appHeaders{margin-top:32vh;}
-.flexBandCont{display:flex;}
-.flexBand{background-color:#fff; color:#3C7070; width:30%; border: 2px solid
-#3C7070; padding:10px; margin: 10px;}
-.inlineButz{display:inline; width:30%;}
-.buttonDivs{width:60%; margin 0 auto;}
-.albumThum{width:100%; margin:0 auto; padding:5px;}
-
-
+.navbar-inverse {
+    background-color: #0C1717;
+}
+.mainBGImage {
+    background: url(../img/turntable-tint.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.browseBG {
+    background: url(../img/tySeaglltintBG.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.appHeaders {
+    margin-top: 32vh;
+}
+.flexBandCont {
+    display: flex;
+}
+.flexBand {
+    background-color: #fff;
+    color: #3C7070;
+    width: 30%;
+    border: 2px solid #3C7070;
+    padding: 10px;
+    margin: 10px;
+}
+.inlineButz {
+    display: inline;
+    width: 30%;
+}
+.buttonDivs {
+    width: 60%;
+    margin 0 auto;
+}
+.albumThum {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+}
 /* FONTS */
 
-.montserrat{font-family:'Montserrat', sans-serif;}
-.openSans{font-family:'Open Sans Condensed', sans-serif; font-size:2rem;
-text-align:center;}
-.ubuntu{font-family:'Ubuntu', sans-serif;}
-
-.montCaps{text-transform:uppercase; text-size:2rem;}
-.openCaps{text-transform:uppercase; text-size:3rem;}
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.openSans {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+.montCaps {
+    text-transform: uppercase;
+    text-size: 2rem;
+}
+.openCaps {
+    text-transform: uppercase;
+    text-size: 3rem;
+}
