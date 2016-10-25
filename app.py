@@ -49,9 +49,13 @@ def welcome(username):
 #Image upload view function
 @app.route("/upload/", methods=['POST', 'GET'])
 def upload():
+  error = None
   if request.method =='POST':
     f = request.files['datafile']
     new_file = f.filename
+    if new_file == "":
+      error = "Please select a file to upload"
+      return render_template('upload.html', error=error)
     f.save('static/img/' + new_file)
     return redirect(url_for('success'))
   else:
