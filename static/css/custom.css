@@ -3,6 +3,13 @@ body {
     background-color: #F0FFFF;
     font-family: 'Montserrat', sans-serif;
 }
+
+.myLabel{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size:1.2rem;
+}
+
 .navbar-inverse {
     background-color: #0C1717;
 }
@@ -12,7 +19,7 @@ body {
 }
 
 .mainBGImage {
-    background: url(../img/turntable2tint.jpg) no-repeat center center fixed;
+    background: url(../img/turntable2new.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -44,8 +51,8 @@ body {
     width: 100px;
 }
 .buttonDivs {
-    width: 40%;
-    margin 0 auto;
+    width: 50vw;
+    margin 4vh 38vw 0;
 }
 .customButn{
     background-color: #305A5A;
