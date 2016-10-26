@@ -18,6 +18,11 @@ Follow these step by step instructions to get your development environment runni
   when prompted for password type ‘foo’.
 5. Navigate to your root folder of the application, i.e., ‘cd src’
 
+## Password
+
+To log into admin area u/n 'your name' p/w 'your name'. Validation will not
+permit anything else or an empty string.
+
 ## Deployment
 
 1. In Terminal, open a new tab to run your server. Navigate to your root folder once again, in this case, ‘cd src’
