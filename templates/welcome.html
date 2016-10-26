@@ -14,12 +14,12 @@
           <h1 class="text-center appHeaders">Welcome to Admin central, {{ username }}</h1>
            <img src="{{ url_for('static', filename='img/avatar.png')
            }}"class="avatar center-block"> 
-           <div class="buttonDivs center-block"> <!-- button container-->
-              <a href="{{ url_for('upload') }}" class="btn btn-primary customButn inlineButz">Click to Upload an image</a>
-              <a class="btn btn-danger inlineButz" href="{{ url_for('logout') }}">Logout</a>
-            </div> <!-- end button cont -->
         </div> <!-- end cols -->
       </div> <!-- end row -->
+        <div class="buttonDivs center-block"> <!-- button container-->
+          <a href="{{ url_for('upload') }}" class="btn btn-primary customButn inlineButz">Upload image</a>
+          <a class="btn btn-danger inlineButz" href="{{ url_for('logout') }}">Logout</a>
+        </div> <!-- end button cont -->
     </div> <!-- end form cont -->
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

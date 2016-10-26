@@ -16,11 +16,11 @@
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
           <p class="openSans">Fancy grabbing some vinyl bargains? We've got a range of classic
-          LPs on offer in stores and online, enter a search term below to find
-          our range of vinyl!</p>
+          LPs on offer our online store, enter a search term below to find
+          our range of vinyl. Happy listening!</p>
           <form method="post" action="{{ url_for('genre') }}">
             <div class="form-group">
-              <label for="genre">Choose from Rock, Indie or Popular</label>
+              <label class="myLabel" for="genre">Choose from Rock, Indie or Popular</label>
               <input type="text" class="form-control" name="my_genre"
               placeholder="Type your genre here">
             </div> <!-- end form group -->
@@ -34,3 +34,7 @@
           {% endif %}
         </div> <!-- end cols -->
       </div> <!-- end row -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+  </body>
