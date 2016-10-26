@@ -33,7 +33,7 @@ body {
     background-size: cover;
 }
 .appHeaders {
-    margin-top: 26vh;
+    margin-top: 22vh;
 }
 .flexBandCont {
     display: flex;
@@ -42,9 +42,10 @@ body {
     background-color: #fff;
     color: #3C7070;
     width: 30%;
-    border: 2px solid #3C7070;
+    border: 1px solid #fff;
+    box-shadow: 3px 7px 15px #888888;
     padding: 10px;
-    margin: 10px;
+    margin: 16px;
 }
 .inlineButz {
     display: inline;
@@ -82,7 +83,10 @@ body {
 }
 .openCaps {
     text-transform: uppercase;
-    text-size: 3rem;
+    text-size: 3.4rem;
+    background-color: #305A5A;
+    color: #fff;
+    padding 8px;
 }
 .avatar{
     width:30%;
